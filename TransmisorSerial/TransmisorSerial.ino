@@ -12,6 +12,6 @@ void setup()
 }
 void loop()
 {
-  Serial.println("-12.5, 15.0, -0.7, 26.1,132.9,-28.5$");
+  Serial.print("-12.5, 15.0, -0.7, 26.1,132.9,-28.5$");
   delay(10000);  //repetimos cada diez segundos
 }
