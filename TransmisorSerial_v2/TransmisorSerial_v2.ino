@@ -71,7 +71,7 @@ void loop()
   //////////////// Armado de Trama /////////////// 
   //////////////////  Opcion 2  ////////////////// 
   for (int i=0 ; i<NUMERO_DE_DATOS ; i++){
-    Serial.print(datos[0]);
+    Serial.print(datos[i]);
     if (i==NUMERO_DE_DATOS-1){
        Serial.print("$");  
     }else{
