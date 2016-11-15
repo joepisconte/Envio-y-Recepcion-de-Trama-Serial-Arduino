@@ -10,7 +10,7 @@
 
 String Trama = ""; // almacenamos los caracteres recibidos para liberar el buffer de recepción.
 const int NUMERO_DE_DATOS = 30;    // cantidad de datos esperados (para este ejemplo, considerar como máximo 35 datos, ya que la memoria dinámica del Arduino UNO es sólo de 2KB). 
-float Datos_Recibidos[NUMERO_DE_DATOS];  //array de número tipo float
+float Datos_Recibidos[NUMERO_DE_DATOS];  //array de números tipo float
 boolean datos_disponibles = false;
 boolean final_de_trama = false;
 
