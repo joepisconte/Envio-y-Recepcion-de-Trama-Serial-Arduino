@@ -13,7 +13,9 @@ float Presion = 26.0;
 float Proximidad = 132.5;
 float Peso = 3.6;
 float Torque = 27.1;
-String datos [6]; //almacenará los valores de las varibles flotantes en formato String. 
+
+const int NUMERO_DE_DATOS = 6
+String datos [NUMERO_DE_DATOS]; //almacenará los valores de las varibles flotantes en formato String. 
 
 void setup()
 {
@@ -68,9 +70,9 @@ void loop()
   /*
   //////////////// Armado de Trama /////////////// 
   //////////////////  Opcion 2  ////////////////// 
-  for (int i =0;i<6;i++){
+  for (int i=0 ; i<NUMERO_DE_DATOS ; i++){
     Serial.print(datos[0]);
-    if (i==5){
+    if (i==NUMERO_DE_DATOS-1){
        Serial.print("$");  
     }else{
       Serial.print(",");  
