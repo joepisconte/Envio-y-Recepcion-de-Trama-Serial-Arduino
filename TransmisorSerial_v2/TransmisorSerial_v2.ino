@@ -14,7 +14,7 @@ float Proximidad = 132.5;
 float Peso = 3.6;
 float Torque = 27.1;
 
-const int NUMERO_DE_DATOS = 6
+const int NUMERO_DE_DATOS = 6;
 String datos [NUMERO_DE_DATOS]; //almacenará los valores de las varibles flotantes en formato String. 
 
 void setup()
