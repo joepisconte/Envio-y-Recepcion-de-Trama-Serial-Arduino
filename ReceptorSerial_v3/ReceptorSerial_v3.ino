@@ -8,7 +8,7 @@
  *  87.89, -89.67, -57.54,  17.96, -28.13,  48.01,  75.33,  62.01,  -2.75, -18.97, -39.11,  16.52,  47.23,  65.26, -41.15,  -2.59, -82.25,  50.88, -97.30,  44.44,  70.12,  39.40,  47.11,  74.62, -97.52,  28.90, -92.81, -33.87, -22.03, -62.69$
  */
 
-String Trama = ""; // almacenamos los caracteres recibidos en la variable Trama para liberar el buffer de recepción.
+String Trama = ""; // almacenamos los caracteres recibidos para liberar el buffer de recepción.
 const int NUMERO_DE_DATOS = 30;    // numero de datos esperados (no considerar más de 30 datos, ya que la memoria dinámica del Arduino UNO es sólo de 2KB) 
 float Datos_Recibidos[NUMERO_DE_DATOS];  //array de número tipo float
 boolean datos_disponibles = false;
