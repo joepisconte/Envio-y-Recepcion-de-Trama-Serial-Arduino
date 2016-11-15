@@ -32,7 +32,7 @@ void loop()
         for(int i=0; i <= fieldIndex; i++)
         { 
          //----- Imprime los datos ----
-         Serial.println(values[i]);
+         Serial.println(values[i]);  //reemplazar por lo que se desee hacer con cada unos de los datos
          //----------------------------
          values[i] = '0'; // setea los valores a 0 para almacenar nuevo dato
         }
