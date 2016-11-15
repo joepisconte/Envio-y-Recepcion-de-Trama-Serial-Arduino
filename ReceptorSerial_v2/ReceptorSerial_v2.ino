@@ -40,7 +40,7 @@ void serialEvent() {  // Interrupción del puerto Serial. Función que es llama 
          {
              if(fieldIndex < NUMERO_DE_DATOS-1)
                fieldIndex++; // incrementa el índice del siguiente campo, siempre que, fieldIndex sea menor que 29
-             }
+         }
          else
          { 
            //cualquier caracter diferente (a un número, punto o coma) termina la adquisición
@@ -51,9 +51,10 @@ void serialEvent() {  // Interrupción del puerto Serial. Función que es llama 
             //////////  Convierte los caracteres recibidos en variables tipo float ///////////
             //////////////////////////////////////////////////////////////////////////////////
             Datos_Recibidos[i] = values[i].toFloat();
+            //Serial.println(Datos_Recibidos[i]);  
             //////////////////////////////////////////////////////////////////////////////////
             datos_disponibles = true;
-            values[i] = '0'; // setea los valores a 0 para almacenar nuevo dato
+            values[i] = ""; // setea los valores a 0 para almacenar nuevo dato
            }
            fieldIndex = 0; // listo para empezar de nuevo
          }
