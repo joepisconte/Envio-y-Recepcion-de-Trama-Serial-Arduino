@@ -13,7 +13,7 @@ String values[NUMERO_DE_DATOS];   // array que contiene los valores de todos los
 float Datos_Recibidos[NUMERO_DE_DATOS];
 boolean datos_disponibles = false;
 
-boolean trama_recibida = false;
+boolean final_de_trama = false;
 String Trama = "";
 
 void setup()
@@ -24,7 +24,7 @@ void setup()
 
 void loop()
 {
- if (trama_recibida == true) {
+ if (final_de_trama == true) {
     //Serial.println(Trama);
     AnalizarTramaSerial(Trama);
     if(datos_disponibles == true){
@@ -34,7 +34,7 @@ void loop()
       datos_disponibles == false; 
     }
     Trama = "";
-    trama_recibida = false;
+    final_de_trama = false;
  } 
 }
 
@@ -44,7 +44,7 @@ void serialEvent() {  // Interrupción del puerto Serial. Función que es llamad
     char inChar = (char)Serial.read(); // captura el nuevo byte
     Trama += inChar; // lo agrega al String Trama
     if (inChar == '$') { // Si el caracter de entrada es un "$" (dólar) activa un flag
-       trama_recibida = true;
+       final_de_trama = true;
     }
     
   }
